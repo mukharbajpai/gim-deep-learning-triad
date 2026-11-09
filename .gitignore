@@ -18,3 +18,4 @@ results/*.json
 *.safetensors
 *.zip
 .ipynb_checkpoints/
+slides/preview/

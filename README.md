@@ -5,7 +5,10 @@
 2. Variational autoencoder: ConvVAE reconstruction on Fashion-MNIST.
 3. Agentic AI: deterministic tool routing + TF-IDF retrieval + extractive QA + abstention on SQuAD.
 
-> **Status:** implementation starter, *not* an experimentally verified final submission. Model training / dataset downloads have **not** been executed in this authored package. Numbers must come from `results/*.json` produced by actual runs. Replace all slide placeholders before submitting.
+> **Status (9 Nov 2026):** all implementations, unit tests, fast runs, and full
+> runs have been executed successfully. Verified metrics are in
+> `docs/RESULTS.md`; only team identities and the final recording URL remain as
+> intentional slide placeholders.
 
 ## Setup (verified with Python 3.11.15)
 
@@ -55,10 +58,13 @@ A cross-modal comparison on three different workloads, using controlled splits a
 - `results/vae.json`, reconstructions and loss chart
 - `results/agent.json` and per-question evidence/predictions
 - weights under `outputs/` (not committed)
+- archived fast/full evidence under `results/fast/` and `results/full/`
+- factual comparison chart under `results/fast_vs_full_comparison.png`
+- final report under `docs/FINAL_REPORT.md`
 
 ## Slides and video
-- `slides/Deep_Learning_Triad.pptx`: 24-slide starter with slide notes/topics; placeholders remain until training outputs are real.
-- `docs/VIDEO_SCRIPT.md`: timed member-by-member allocation.
+- `slides/Deep_Learning_Triad.pptx` and `.pdf`: rendered, verified 24-slide deck with actual results.
+- `docs/PRESENTATION_GUIDE.md`: timed member-by-member speaking guide.
 - Final slide must include real recording URL, access permission to `bdagim2025@gmail.com` or `anup@gim.ac.in`.
 - Submission email: To `bdagim2025@gmail.com`; CC all members; attach code directly and PPT/PDF separately; datasets and video shared with view permission.
 
