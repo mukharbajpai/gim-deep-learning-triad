@@ -1,0 +1,64 @@
+{
+  "experiment": "fashion_mnist_vae",
+  "mode": "fast",
+  "seed": 42,
+  "train_size": 2000,
+  "validation_size": 400,
+  "test_size": 500,
+  "epochs": 2,
+  "latent_dim": 16,
+  "beta": 1.0,
+  "test_reconstruction_bce_per_image": 330.15509,
+  "test_kl_per_image": 17.13585,
+  "test_elbo_loss_per_image": 347.29092,
+  "test_mse_per_pixel": 0.05778,
+  "deterministic_ae_baseline_seed": 43,
+  "deterministic_ae_baseline_test_bce_per_image": 313.48847,
+  "deterministic_ae_baseline_test_mse_per_pixel": 0.05073,
+  "split_protocol": "seeded permutation of original 60k train; adjacent, non-overlapping train/validation subsets; original test untouched",
+  "compute_device": "cuda",
+  "elapsed_seconds": 3.91,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss_per_image": 528.30833,
+      "val_reconstruction_bce_per_image": 428.10828,
+      "val_kl_per_image": 18.89705,
+      "val_loss_per_image": 447.00531,
+      "val_mse_per_pixel": 0.10209
+    },
+    {
+      "epoch": 2,
+      "train_loss_per_image": 397.29329,
+      "val_reconstruction_bce_per_image": 336.62347,
+      "val_kl_per_image": 16.60438,
+      "val_loss_per_image": 353.22784,
+      "val_mse_per_pixel": 0.05979
+    }
+  ],
+  "baseline_history": [
+    {
+      "epoch": 1,
+      "train_bce_per_image": 479.36329,
+      "val_bce_per_image": 406.0516,
+      "val_mse_per_pixel": 0.09058
+    },
+    {
+      "epoch": 2,
+      "train_bce_per_image": 354.07115,
+      "val_bce_per_image": 318.92666,
+      "val_mse_per_pixel": 0.05207
+    }
+  ],
+  "runtime": {
+    "recorded_at_utc": "2026-11-09T17:12:14+00:00",
+    "python_version": "3.11.15",
+    "python_executable": "C:\\CodeCave\\DL\\deep-learning-triad\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch_version": "2.11.0+cu128",
+    "cuda_build": "12.8",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_memory_gib": 6.0
+  }
+}

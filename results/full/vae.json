@@ -1,0 +1,204 @@
+{
+  "experiment": "fashion_mnist_vae",
+  "mode": "full",
+  "seed": 42,
+  "train_size": 50000,
+  "validation_size": 10000,
+  "test_size": 10000,
+  "epochs": 12,
+  "latent_dim": 16,
+  "beta": 1.0,
+  "test_reconstruction_bce_per_image": 220.05956,
+  "test_kl_per_image": 17.46663,
+  "test_elbo_loss_per_image": 237.52617,
+  "test_mse_per_pixel": 0.01261,
+  "deterministic_ae_baseline_seed": 43,
+  "deterministic_ae_baseline_test_bce_per_image": 216.2247,
+  "deterministic_ae_baseline_test_mse_per_pixel": 0.01093,
+  "split_protocol": "seeded permutation of original 60k train; adjacent, non-overlapping train/validation subsets; original test untouched",
+  "compute_device": "cuda",
+  "elapsed_seconds": 396.27,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss_per_image": 289.30665,
+      "val_reconstruction_bce_per_image": 233.13326,
+      "val_kl_per_image": 18.88743,
+      "val_loss_per_image": 252.02068,
+      "val_mse_per_pixel": 0.0186
+    },
+    {
+      "epoch": 2,
+      "train_loss_per_image": 254.1159,
+      "val_reconstruction_bce_per_image": 227.04872,
+      "val_kl_per_image": 17.76577,
+      "val_loss_per_image": 244.81454,
+      "val_mse_per_pixel": 0.01603
+    },
+    {
+      "epoch": 3,
+      "train_loss_per_image": 249.5215,
+      "val_reconstruction_bce_per_image": 224.24158,
+      "val_kl_per_image": 17.53962,
+      "val_loss_per_image": 241.78117,
+      "val_mse_per_pixel": 0.01481
+    },
+    {
+      "epoch": 4,
+      "train_loss_per_image": 247.11953,
+      "val_reconstruction_bce_per_image": 222.64047,
+      "val_kl_per_image": 17.90476,
+      "val_loss_per_image": 240.54527,
+      "val_mse_per_pixel": 0.01413
+    },
+    {
+      "epoch": 5,
+      "train_loss_per_image": 245.74199,
+      "val_reconstruction_bce_per_image": 221.72972,
+      "val_kl_per_image": 18.46799,
+      "val_loss_per_image": 240.19768,
+      "val_mse_per_pixel": 0.01379
+    },
+    {
+      "epoch": 6,
+      "train_loss_per_image": 244.71925,
+      "val_reconstruction_bce_per_image": 221.12558,
+      "val_kl_per_image": 17.74617,
+      "val_loss_per_image": 238.87178,
+      "val_mse_per_pixel": 0.01349
+    },
+    {
+      "epoch": 7,
+      "train_loss_per_image": 243.94638,
+      "val_reconstruction_bce_per_image": 220.72708,
+      "val_kl_per_image": 17.38362,
+      "val_loss_per_image": 238.11066,
+      "val_mse_per_pixel": 0.01338
+    },
+    {
+      "epoch": 8,
+      "train_loss_per_image": 243.39148,
+      "val_reconstruction_bce_per_image": 220.40448,
+      "val_kl_per_image": 17.39454,
+      "val_loss_per_image": 237.799,
+      "val_mse_per_pixel": 0.01323
+    },
+    {
+      "epoch": 9,
+      "train_loss_per_image": 242.87975,
+      "val_reconstruction_bce_per_image": 219.75301,
+      "val_kl_per_image": 17.58539,
+      "val_loss_per_image": 237.33839,
+      "val_mse_per_pixel": 0.01294
+    },
+    {
+      "epoch": 10,
+      "train_loss_per_image": 242.42396,
+      "val_reconstruction_bce_per_image": 219.69666,
+      "val_kl_per_image": 17.57381,
+      "val_loss_per_image": 237.27043,
+      "val_mse_per_pixel": 0.01286
+    },
+    {
+      "epoch": 11,
+      "train_loss_per_image": 242.07807,
+      "val_reconstruction_bce_per_image": 219.72798,
+      "val_kl_per_image": 17.5065,
+      "val_loss_per_image": 237.23445,
+      "val_mse_per_pixel": 0.01292
+    },
+    {
+      "epoch": 12,
+      "train_loss_per_image": 241.81565,
+      "val_reconstruction_bce_per_image": 218.86432,
+      "val_kl_per_image": 17.52605,
+      "val_loss_per_image": 236.39035,
+      "val_mse_per_pixel": 0.0126
+    }
+  ],
+  "baseline_history": [
+    {
+      "epoch": 1,
+      "train_bce_per_image": 256.79573,
+      "val_bce_per_image": 229.94983,
+      "val_mse_per_pixel": 0.01702
+    },
+    {
+      "epoch": 2,
+      "train_bce_per_image": 225.23211,
+      "val_bce_per_image": 223.33897,
+      "val_mse_per_pixel": 0.01437
+    },
+    {
+      "epoch": 3,
+      "train_bce_per_image": 221.3143,
+      "val_bce_per_image": 220.63399,
+      "val_mse_per_pixel": 0.0132
+    },
+    {
+      "epoch": 4,
+      "train_bce_per_image": 219.23679,
+      "val_bce_per_image": 219.08997,
+      "val_mse_per_pixel": 0.0126
+    },
+    {
+      "epoch": 5,
+      "train_bce_per_image": 217.95782,
+      "val_bce_per_image": 218.19935,
+      "val_mse_per_pixel": 0.01226
+    },
+    {
+      "epoch": 6,
+      "train_bce_per_image": 217.07045,
+      "val_bce_per_image": 217.41105,
+      "val_mse_per_pixel": 0.01191
+    },
+    {
+      "epoch": 7,
+      "train_bce_per_image": 216.41741,
+      "val_bce_per_image": 217.75157,
+      "val_mse_per_pixel": 0.01219
+    },
+    {
+      "epoch": 8,
+      "train_bce_per_image": 215.84342,
+      "val_bce_per_image": 216.20193,
+      "val_mse_per_pixel": 0.0114
+    },
+    {
+      "epoch": 9,
+      "train_bce_per_image": 215.4164,
+      "val_bce_per_image": 216.04803,
+      "val_mse_per_pixel": 0.01135
+    },
+    {
+      "epoch": 10,
+      "train_bce_per_image": 215.04862,
+      "val_bce_per_image": 215.76339,
+      "val_mse_per_pixel": 0.01122
+    },
+    {
+      "epoch": 11,
+      "train_bce_per_image": 214.71053,
+      "val_bce_per_image": 215.3911,
+      "val_mse_per_pixel": 0.01107
+    },
+    {
+      "epoch": 12,
+      "train_bce_per_image": 214.45998,
+      "val_bce_per_image": 215.06799,
+      "val_mse_per_pixel": 0.01094
+    }
+  ],
+  "runtime": {
+    "recorded_at_utc": "2026-11-09T17:38:07+00:00",
+    "python_version": "3.11.15",
+    "python_executable": "C:\\CodeCave\\DL\\deep-learning-triad\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch_version": "2.11.0+cu128",
+    "cuda_build": "12.8",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_memory_gib": 6.0
+  }
+}

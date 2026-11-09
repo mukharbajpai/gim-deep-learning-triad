@@ -1,0 +1,47 @@
+{
+  "experiment": "distilbert_imdb",
+  "mode": "fast",
+  "seed": 42,
+  "dataset": "stanfordnlp/imdb",
+  "model": "distilbert/distilbert-base-uncased",
+  "train_size": 800,
+  "validation_size": 200,
+  "test_size": 200,
+  "epochs": 1,
+  "learning_rate": 2e-05,
+  "split_protocol": "train/validation are non-overlapping ranges after seeded shuffle of original IMDb train; test is from original IMDb test",
+  "test_accuracy": 0.695,
+  "test_f1": 0.6629834254143646,
+  "test_macro_f1": 0.6922223063144882,
+  "test_confusion_matrix": [
+    [
+      79,
+      25
+    ],
+    [
+      36,
+      60
+    ]
+  ],
+  "validation_accuracy": 0.745,
+  "validation_f1": 0.7329842931937173,
+  "validation_macro_f1": 0.7444825772188681,
+  "majority_baseline_label": 0,
+  "majority_baseline_test_accuracy": 0.52,
+  "majority_baseline_test_f1": 0.0,
+  "majority_baseline_test_macro_f1": 0.34210526315789475,
+  "training_and_evaluation_seconds": 18.95,
+  "elapsed_seconds": 19.84,
+  "compute_device": "cuda",
+  "runtime": {
+    "recorded_at_utc": "2026-11-09T17:12:00+00:00",
+    "python_version": "3.11.15",
+    "python_executable": "C:\\CodeCave\\DL\\deep-learning-triad\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch_version": "2.11.0+cu128",
+    "cuda_build": "12.8",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1660 Ti",
+    "gpu_memory_gib": 6.0
+  }
+}
