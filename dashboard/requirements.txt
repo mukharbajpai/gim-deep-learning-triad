@@ -1,0 +1,5 @@
+# Lightweight, results-only dashboard dependencies (Python 3.11).
+streamlit==1.51.0
+plotly==6.4.0
+pandas==2.3.3
+Pillow==12.3.0
