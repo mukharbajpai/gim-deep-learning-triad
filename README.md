@@ -29,6 +29,35 @@ python scripts/check_results.py
 # For final run: python scripts/run_all.py
 ```
 
+## Interactive results dashboard
+
+The presentation-ready Streamlit dashboard explores the committed fast/full
+results without retraining models or downloading datasets. It includes:
+
+- an overview of the three task-specific evaluation lenses;
+- interactive DistilBERT confusion matrices, baseline comparisons, class
+  metrics, and run-scale analysis;
+- zoomable VAE/AE learning curves, ELBO decomposition, and the genuine saved
+  reconstruction panel;
+- a searchable, correct/incorrect-filterable explorer for all 100 full SQuAD
+  prediction records, including saved evidence, retrieval/QA scores, oracle
+  outputs, and evidence-backed failure diagnostics.
+
+Install only the lightweight dashboard dependencies and launch from the root:
+
+```powershell
+.venv\Scripts\Activate.ps1
+python -m pip install -r dashboard\requirements.txt
+python -m streamlit run dashboard\app.py
+```
+
+The app reads `results/fast/` and `results/full/` using paths anchored to its
+source files, so it works offline after dependency installation. Missing
+optional images are handled without crashing. The app is a **saved-result
+explorer**, not a live inference service: ignored checkpoints under `outputs/`
+are not required or loaded. See [`dashboard/README.md`](dashboard/README.md) for
+architecture, validation, and exact artifact dependencies.
+
 On laptops without dedicated GPUs, the transformer step and full agent QA can be slow. Run each independently and reduce `--fast` settings if necessary. First execution requires internet access to download datasets and model weights; the data and outputs directories are intentionally ignored by Git.
 
 The pinned dependency set was verified as a unit. CUDA 12.8 wheels are optional;
